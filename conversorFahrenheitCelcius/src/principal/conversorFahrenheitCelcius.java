@@ -14,7 +14,7 @@ public class conversorFahrenheitCelcius {
 		int celcius;
 		
 		
-		System.out.println("Qual a tempereatura em F?");
+		System.out.println("Qual a tempereatura em ºF?");
 		fahrenheit = leia.nextInt();
 		
 		celcius = 5 * ((fahrenheit-32)/9);
