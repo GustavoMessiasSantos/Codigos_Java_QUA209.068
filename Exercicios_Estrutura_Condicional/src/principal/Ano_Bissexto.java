@@ -12,7 +12,7 @@ public class Ano_Bissexto {
 		
 		ano = leia.nextInt();
 		
-		if(ano%4 == 0) {
+		if(ano%4 == 0 && ano%100 != 0) {
 			System.out.println("O ano é bissexto!");
 		}else {
 			System.out.println("O ano não é bissexto!");

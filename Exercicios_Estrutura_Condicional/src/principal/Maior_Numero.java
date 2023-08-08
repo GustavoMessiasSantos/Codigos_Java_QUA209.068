@@ -9,8 +9,8 @@ public class Maior_Numero {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		int A;
-		int B;
+		int A = 0;
+		int B = 0;
 		
 		A = leia.nextInt();
 		B = leia.nextInt();
@@ -20,7 +20,7 @@ public class Maior_Numero {
 		}else {
 			System.out.println("O Numero maior é " + B);
 		}
-		
+		System.out.println("O maior número é: " + Math.max(A, B));
 		
 		leia.close();
 

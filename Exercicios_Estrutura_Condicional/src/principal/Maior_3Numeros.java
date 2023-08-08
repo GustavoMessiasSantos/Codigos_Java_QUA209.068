@@ -9,12 +9,15 @@ public class Maior_3Numeros {
 		
 		Scanner leia = new Scanner(System.in);
 		
-		int A;
-		int B;
-		int C;
+		int A = 0;
+		int B = 0;
+		int C = 0;
 		
+		System.out.println("Digite um número!");
 		A = leia.nextInt();
+		System.out.println("Digite outro número!");
 		B = leia.nextInt();
+		System.out.println("Digite outro número!");
 		C = leia.nextInt();
 		
 		if(A>B && A>C) {
