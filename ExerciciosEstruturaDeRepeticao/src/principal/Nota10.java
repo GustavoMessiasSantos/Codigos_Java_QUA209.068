@@ -13,16 +13,16 @@ public class Nota10 {
 		Scanner leia = new Scanner(System.in);
 		
 		int contador = 0;
-		int nota = 0;
+		double nota = 0;
 		
 		System.out.println("Digite sua nota: ");
 		nota = leia.nextInt();
-	    while(nota > 10 || nota < 0) {
+	    while(nota >= 10 || nota <= 0) {
 	    	System.out.println("Digite uma nota valida!");
 	    	contador++;
 	    	System.out.println("Digite sua nota: ");
-	    	nota = leia.nextInt();
-	    	if(nota >= 0 || nota <= 10) {
+	    	nota = leia.nextDouble();
+	    	if(nota >= 0 && nota <= 10) {
 	    		System.out.println("Sua nota foi: " + nota);
 	    	}
 	    }

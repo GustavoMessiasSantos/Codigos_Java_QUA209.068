@@ -12,19 +12,15 @@ public class NumerosUmAVinte {
 				Scanner leia = new Scanner(System.in);
 				
 				
-				int numero = 1;
-				int contador = 0;
+				int contador;
 				
-				for(contador = 0; contador<20; contador++) {
-					System.out.print(numero + " ");
-					numero = numero + 1;
+				for(contador = 1; contador<21; contador++) {
+					System.out.print(contador + " ");
 				}
 				
-				numero = 1;
 				
-				for(contador = 0; contador<20; contador++) {
-					System.out.printf("\n" + numero);
-					numero = numero + 1;
+				for(contador = 1; contador<21; contador++) {
+					System.out.printf("\n" + contador);
 				}
 				
 				
