@@ -18,11 +18,12 @@ public class AlturaDe10Pessoas {
 		
 		for(int contador = 0; contador<10; contador++) {
 			altura = input.nextDouble();
-			altura = altura++;
+			mediaAltura = mediaAltura + altura;
+		    //outra forma de fazer.
+			//mediaAltura += altura;
 			
 		}
-		mediaAltura = altura/10;
-		System.out.printf("A media de altura = %.2f m\n",  altura);
+		System.out.printf("A media de altura = %.2f m\n",  mediaAltura/10);
 		
 		
 		
