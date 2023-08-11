@@ -22,6 +22,12 @@ public class MediaNotas {
 		double media = (notas[0] + notas[1] + notas[2] + notas[3])/4;
 		System.out.printf("A media do %s é %.2f", nome, media);
 		
+		if(media>=7) {
+			System.out.println(" Você foi aprovado!");
+		}else {
+			System.out.println(" Você foi reprovado!");
+		}
+		
 		
 		
 		sc.close();
