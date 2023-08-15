@@ -24,10 +24,37 @@ public class Salario {
 
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Digite seu salário: ");
+		double salario = sc.nextDouble();
+		System.out.println("Digite seu total de vendas: ");
+		double vendas = sc.nextDouble();
 		
+		System.out.printf("Seu salario com descontos e bonus foram de: %.2f R$ \n", salario_e_vendas(salario, vendas));
+		System.out.printf("Suas vendas foram de: %.2f R$ \n", vendas);
 		
 
 		sc.close();
+	}
+	static double salario_e_vendas(double salario, double vendas) {
+		double descontoINSS = 0;
+		double descontoIRPF = 0;
+		double bonificacao = 0;
+		
+		descontoINSS = salario * 0.05;
+		descontoIRPF = salario * 0.11;
+		
+		if(vendas>20000) {
+			bonificacao = salario*0.05;
+		}else if(vendas>=15000 && vendas<=20000) {
+			bonificacao = salario*0.03;
+		}else if(vendas>=10000 && vendas<=15000) {
+			bonificacao = salario*0.01;
+		}else {
+			System.out.println("Tente novamente próximo mês acredito em você!");
+		}
+		
+		return salario + bonificacao - (descontoINSS + descontoIRPF);
+		
 	}
 
 	
