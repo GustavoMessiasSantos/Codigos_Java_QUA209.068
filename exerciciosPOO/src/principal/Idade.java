@@ -21,6 +21,8 @@ public class Idade {
 		
 		System.out.println(pessoa.nome);
 		System.out.println("Sua idade atual é: " + pessoa.idade(pessoa.anoNascimento) + " Anos");
+		
+		sc.close();
 
 	}
 

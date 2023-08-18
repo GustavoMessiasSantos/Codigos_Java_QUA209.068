@@ -22,7 +22,7 @@ public class MetroQuadrado {
 		
 		System.out.printf("\nO tamanho do terreno é: %.2f metros Quadrados",terreno.area);
 		
-		
+		sc.close();
 		
 
 	}
