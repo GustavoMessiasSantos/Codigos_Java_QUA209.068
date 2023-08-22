@@ -4,6 +4,7 @@ public class Estoque {
 
 	private String produto;
 	private int quantidade;
+	private int preco;
 
 	
 	
