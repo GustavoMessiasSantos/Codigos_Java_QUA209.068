@@ -8,23 +8,19 @@ import entities.FuncionariosChefia;
 public class ProgramFuncionarios {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		Funcionarios funcionarios = new Funcionarios();
-		FuncionariosChefia fc = new FuncionariosChefia();
-		
-		System.out.println("Digite seu nome: ");
-		fc.setNome(sc.nextLine());
-		System.out.println("Digite seu cargo: ");
-		fc.setCargo(sc.nextLine());
-		System.out.println("Digite sua idade: ");
-		fc.setIdade(sc.nextInt());
-		System.out.println("Digite seu salario: ");
-		fc.setSalario(sc.nextDouble());
-		
-		fc.informacoesFuncionario();
-		
-		sc.close();
-		
+	Dados dados = new Chefia(); // Utilizando a subclasse Chefia
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Qual o nome do funcionário? ");
+        dados.setFuncionario(sc.nextLine());
+        System.out.println("Qual o cargo do funcionário? ");
+        dados.setCargo(sc.nextLine().toUpperCase());
+        System.out.println("Qual a idade do funcionário? ");
+        dados.setIdade(sc.nextInt());
+        System.out.println("Qual o salário do funcionário?");
+        dados.setSalario(sc.nextDouble());
+
+        dados.dadosFuncionario();
 
 }
 	}
