@@ -28,7 +28,16 @@ public class Program {
 		funcionario.setSalario(1200.00);
 		funcionario.setEmpresa("Feira da Parangaba");
 		System.out.println(funcionario);
-		System.out.println("\n***************************");
+		System.out.println("\n***************************\n");
+		
+		/*int[] numeros = new int[5];
+		int cont = 15;
+		for(int i = 0; i<5; i++){
+			numeros[i] = cont++;
+		}
+		for(int numero : numeros) {
+			System.out.println(numero);
+		}*/
 
 	}
 
