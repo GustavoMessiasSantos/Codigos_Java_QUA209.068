@@ -1,6 +1,6 @@
 package entities;
 
-public class Funcionarios {
+public class Dados {
     private String funcionario;
     private int idade;
     private String cargo;
