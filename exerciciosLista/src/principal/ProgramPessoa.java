@@ -3,6 +3,8 @@ package principal;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import entities.Pessoa;
+
 
 public class ProgramPessoa {
 
@@ -10,6 +12,10 @@ public class ProgramPessoa {
 		
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Pessoa> pessoas = new ArrayList<>();
+		
+		
+		
+		sc.close();
 		
 		
 		
