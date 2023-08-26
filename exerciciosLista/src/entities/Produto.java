@@ -1,22 +1,38 @@
 package entities;
 
-import java.util.Comparator;
-import java.util.Objects;
-
-public class Produto implements comparable<produto> {
+public class Produto implements Comparable<Produto> {
 	
 	private String nome;
 	private int quantidade;
 	private double preco;
 	
+	public Produto(String nome, int quantidade, double preco) {
+		super();
+		this.nome = nome;
+		this.quantidade = quantidade;
+		this.preco = preco;
+	}
 	
+	public Produto(String nome, int quantidade) {
+		super();
+		this.nome = nome;
+		this.quantidade = quantidade;
+	}
 	
-	public String getNomeString() {
+	public Produto() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getNome() {
 		return nome;
 	}
-	public void setNomeString(String nomeString) {
-		this.nome = nomeString;
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
+
+
 	public int getQuantidade() {
 		return quantidade;
 	}
@@ -33,8 +49,15 @@ public class Produto implements comparable<produto> {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Nome: " + nome + ", Quantidade" + quantidade + ", Preço unitário: " + preco;
+		return "Nome: " + nome
+				+", Quantidade: " + quantidade
+				+", Preço unitário: " + preco;
 	}
 
+	@Override
+	public int compareTo(Produto outroProduto) {
+		// TODO Auto-generated method stub
+		return this.nome.compareTo(outroProduto.nome);
+	}
 
 }
